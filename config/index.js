@@ -5,8 +5,8 @@ var _ = require('lodash')
 
 var base = {
   env: process.env.NODE_ENV,
-  root: path.normalize(__dirname, '/..'),
-  prot: process.env.PORT || 3001,
+  root: path.normalize(__dirname, '/../..'),
+  port: process.env.PORT || 3001,
   // MongoDB
   mongo: {
     option: {
