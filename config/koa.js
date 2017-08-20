@@ -11,8 +11,8 @@ const config = require('../config')
 
 module.exports = function (app) {
   if (app.env === 'development') {
-    app.use(responseTime)
-    app.use(logger)
+    app.use(responseTime())
+    app.use(logger())
   }
   app.use(cors({
     credentials: true
